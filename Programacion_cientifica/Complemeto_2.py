@@ -5,7 +5,7 @@
 
 import time
 
-#Aqui lo convertimos a binario de toda la vida
+#Aqui lo convertimos a binario   de toda la vida
 #Quite el bin por que quedaba mas ojete
 def convertir_a_binario(numero):
     binario = ''
