@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CATALOG>
+<CD>
+    <TITLE>hola</TITLE>
+    <ARTIST>Bob Dylan</ARTIST>
+    <COUNTRY>USA</COUNTRY>
+    <COMPANY>Columbia</COMPANY>
+    <PRICE>10.90</PRICE>
+    <YEAR>1985</YEAR>
+</CD>
+<CD>
+    <TITLE>Hide your heart</TITLE>
+    <ARTIST>Bonnie Tyler</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>CBS Records</COMPANY>
+    <PRICE>9.90</PRICE>
+    <YEAR>1988</YEAR>
+</CD>
+<CD>
+    <TITLE>Even Flow</TITLE>
+    <ARTIST>Pear Jam</ARTIST>
+    <COUNTRY>U.S</COUNTRY>
+    <COMPANY>Columbia</COMPANY>
+    <YEAR>1991</YEAR>
+</CD>
+<CD>
+    <TITLE>No one knows</TITLE>
+    <ARTIST>Queen of the stone age</ARTIST>
+    <COUNTRY>U.K</COUNTRY>
+    <COMPANY>CBS Records</COMPANY>
+    <YEAR>2002</YEAR>
+</CD>
+</CATALOG>
+

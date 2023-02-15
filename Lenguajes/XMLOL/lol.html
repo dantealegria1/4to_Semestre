@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>      
+        table {
+            border-collapse:separate;
+            width: 70%;
+            box-shadow: 5px 5px 10px 10px;
+            background-color: #f6f6f6;
+            position: absolute;
+        top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+        }
+        
+        th, td {
+            text-align: center;
+            padding: 12px;
+        }
+        body{
+  background-image: url("https://nuestrassociales.files.wordpress.com/2020/10/img_1854.jpg?w=1024");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+        tr:nth-child(even){background-color: #ddebf9}
+    </style>
+</head>
+<body>
+    <p><button onclick="loadXMLDoc()">   Get CD info   </button></p>
+
+    <table id="demo" >
+    <tr><th>Artist</th><th>Title</th></tr>
+    </table>
+
+    <script language = "javascript">
+    function loadXMLDoc() {
+    var xmlhttp = new XMLHttpRequest();
+    
+    xmlhttp.onreadystatechange = function() 
+    {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) 
+        {
+        myFunction(xmlhttp);
+        }
+    };
+    xmlhttp.open("GET", "cd.xml" , true);
+    xmlhttp.send();
+    }
+
+    function myFunction(xml) 
+    {
+    var x, i, xmlDoc, table;
+    xmlDoc = xml.responseXML;
+    table = "<tr>   <th>Artist</th>   <th>Title</th>   </tr>";
+    x = xmlDoc.getElementsByTagName("CD");     // tag del xml  ARTIST TITLE
+    
+    for (i = 0; i < x.length; i++) 
+    { 
+        table += "<tr><td>" + 
+        x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue 
+            +   "</td><td>" +
+        x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue 
+            +  "</td><td>";
+    }
+    document.getElementById("demo").innerHTML = table;
+    }
+    </script>
+
+</body>
+</html>
