@@ -1,38 +1,65 @@
-
 <!DOCTYPE html>
 <html>
-
 <body>
-
+<table id="demo">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+    </tr>
+</table>
+<style>
+    body{
+        background-image: url("https://cdn.vox-cdn.com/thumbor/ejqHyVh4ZCvJSBivYpluyBgias4=/0x0:1280x720/1200x800/filters:focal(538x258:742x462)/cdn.vox-cdn.com/uploads/chorus_image/image/71975551/GV2umuX.0.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    table{
+        border-collapse:separate;
+            width: 70%;
+            box-shadow: 5px 5px 10px 10px;
+            background-color: #f6f6f6;
+            position: absolute;
+            border: #f6f6f6;
+            border-style: dashed;
+            border-width: 5px;
+        top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    th, td {
+        padding: 5px;
+        text-align: left;;
+    }
+    tr:nth-child(even){background-color: #ffe0f4}
+    th {
+        background-color: #ff99cc;
+        color: white;
+    }
 </style>
 <div id="id01"></div>
-
 <script>
-var xmlhttp = new XMLHttpRequest();
-var url = "mytut2.txt";
-
-xmlhttp.onreadystatechange = function() 
-{
-    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) 
-    {
+    
+    var xmlhttp = new XMLHttpRequest();
+    var url = "mytut2.txt";
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
         var myArr = JSON.parse(xmlhttp.responseText);
         myFunction(myArr);
-    }
-};
-xmlhttp.open("GET", url, true);
-xmlhttp.send();
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
 
-function myFunction(arr) 
-{
-    var out = "";
-    var i;
-    for(i = 0; i < arr.length; i++) {
-        out +=  arr[i].firstName + ' -- ' + 
-                 arr[i].lastName + '<br>'; //  + '</a><br>';
+    function myFunction(arr) {
+        var table = "";
+        table += "<tr><th>Last Name</th><th>First Name</th></tr>";
+        for (var i = 0; i < arr.length; i++) {
+        table += "<tr><td>" + 
+            arr[i].firstName + "</td><td>" +
+            arr[i].lastName + "</td></tr>";
+        }
+        document.getElementById("demo").innerHTML = table;
     }
-    document.getElementById("id01").innerHTML = out;
-}
 </script>
 </body>
 </html>
-
