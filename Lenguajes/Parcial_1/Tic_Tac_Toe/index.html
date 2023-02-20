@@ -1,45 +1,71 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Tic Tac Toe</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="Funcion.js"></script>
-    <link rel="stylesheet" href="Style.css">
-</head>
-<body>
-    <h1>Tic Tac Toe</h1>
-    <label>
-        jUGADOR 1:
-        <input type="text" name="player"> 
-    </label>
-    <label>
-        jUGADOR 2:
-        <input type="text" name="player"> 
-    </label>
-    <br>
-    <input type="text" name="a1" id="a1"
-    onclick="myFunction()">
-    <input type="text" name="a2" id="a2"
-    onclick="myFunction()">
-    <input type="text" name="a3" id="a3"
-    onclick="myFunction()">
-    <br>
-    <input type="text" name="b1" id="b1"
-    onclick="myFunction()">
-    <input type="text" name="b2" id="b2"
-    onclick="myFunction()">
-    <input type="text" name="b3" id="b3"
-    onclick="myFunction()">
-    <br>
-    <input type="text" name="c1" id="c1"
-    onclick="myFunction()">
-    <input type="text" name="c2" id="c2"
-    onclick="myFunction()">
-    <input type="text" name="c3" id="c3"
-    onclick="myFunction()">
-    <br>
-    <button onclick="clearInput()">Reset</button>
 
-</body>
+<!DOCTYPE html>
+    
+    <head>
+        <meta name="viewport" content=
+            "width=device-width, initial-scale=1.0">
+    
+        <!-- CSS file Included -->
+        <link rel="stylesheet"
+            type="text/css" href="Style.css">
+    
+        <!-- JavaScript file included -->
+        <script src="Funcion.js"></script>
+    </head>
+    
+    <body>
+        <div id="main">
+            <img src="https://ghomsi.github.io/gitstore/img/tictactoe.gif" 
+            width="250" height="100">
+    
+            <!-- Game Instructions -->
+            <p id="ins"><br>Primer jugador inicia:
+                <b>Jugador X</b><br><br>Segundo
+                Jugador inicia: <b>Jugador 0</b>
+            </p>
+            <br><br>
+            <!-- 3*3 grid of Boxes -->
+            <input type="text" id="b1" onclick=
+                "myfunc_3(); myfunc();" readonly>
+    
+            <input type="text" id="b2" onclick=
+                "myfunc_4(); myfunc();" readonly>
+    
+            <input type="text" id="b3" onclick=
+                "myfunc_5(); myfunc();" readonly>
+            <br><br>
+    
+            <input type="text" id="b4" onclick=
+                "myfunc_6(); myfunc();" readonly>
+                
+            <input type="text" id="b5" onclick=
+                "myfunc_7(); myfunc();" readonly>
+    
+            <input type="text" id="b6" onclick=
+                "myfunc_8(); myfunc();" readonly>
+            <br><br>
+    
+            <input type="text" id="b7" onclick=
+                "myfunc_9(); myfunc();" readonly>
+    
+            <input type="text" id="b8" onclick=
+                "myfunc_10();myfunc();" readonly>
+    
+            <input type="text" id="b9" onclick=
+                "myfunc_11();myfunc();" readonly>
+    
+            <!-- Grid end here  -->
+            <br><br><br>
+            <!-- Button to reset game -->
+            <button id="but" onclick="myfunc_2()">
+                REINICIAR
+            </button>
+    
+            <br><br>
+            <!-- Space to show player turn -->
+            <p id="print"></p>
+        
+        </div>
+    </body>
+    
 </html>

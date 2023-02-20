@@ -1,37 +1,61 @@
-body{
-    background-color: rgb(0, 98, 255);
-    background-repeat: no-repeat;
-    color: #fc0000;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: center;
-    
+h1 {
+    color: orangered;
+    font-size: 45px;
+    font-family: Verdana,
+        Geneva, Tahoma, sans-serif;
 }
-input
-{
-    background-color: #cacaca;
-    color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    text-align: center;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    width: 100px;
-    height: 50px;
-    margin: 5px;
-    padding: 5px;
 
-}
-alert{
-    background-color: #cacaca;
-    color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
+/* 3*3 Grid */
+#b1, #b2, #b3, #b4, #b5,
+#b6, #b7, #b8, #b9 {
+    width: 80px;
+    height: 52px;
+    margin: auto;
+    border: 1px solid rgb(255, 0, 0);
+    border-style: solid;
+    border-radius: 6px; 
     font-size: 30px;
     text-align: center;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    width: 100px;
-    height: 50px;
-    margin: 5px;
-    padding: 5px;
+    font-family: Comic Sans MS,
+        Comic Sans, cursive;
+}
+
+/* Reset Button */
+#but {
+    box-sizing: border-box;
+    width: 95px;
+    height: 40px;
+    border: 1px solid rgb(255, 45, 30);
+    margin: auto;
+    border-radius: 4px;
+    font-family: Verdana,
+        Geneva, Tahoma, sans-serif;
+
+    background-color: rgb(255, 56, 30);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Player turn space */
+#print {
+    font-family: Verdana,
+        Geneva, Tahoma, sans-serif;
+
+    color: rgb(255, 30, 30);
+    font-size: 20px;
+}
+
+/* Main Container */
+#main {
+    text-align: center;
+}
+
+/* Game Instruction Text */
+#ins {
+    font-family: Verdana,
+        Geneva, Tahoma, sans-serif;
+         
+    color: rgb(255, 30, 30);
+    font-size: 17px;
 }
