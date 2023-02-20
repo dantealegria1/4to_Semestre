@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(0, 98, 255);
+    background-repeat: no-repeat;
+    color: #fc0000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    
+}
+input
+{
+    background-color: #cacaca;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+
+}
+alert{
+    background-color: #cacaca;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+}
