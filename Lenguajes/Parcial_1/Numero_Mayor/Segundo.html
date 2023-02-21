@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title>TODO supply a title</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+        <body onload="processUser()">
+            
+    <script language="JavaScript">
+    
+    function processUser()
+    {
+        //funcion que recibe los datos de la pagina anterior y dice cual es el mayor
+        var parameters = location.search.substring(1).split("&");
+        var temp = parameters[0].split("=");
+        var l = unescape(temp[1]);
+        temp = parameters[1].split("=");
+        var p = unescape(temp[1]);
+        temp = parameters[2].split("=");
+        var t = unescape(temp[1]);
+
+        if (l > p && l > t)
+        {
+            document.getElementById("log").innerHTML = "El mayor es: " + l;
+        }
+        else if (p > l && p > t)
+        {
+            document.getElementById("log").innerHTML = "El mayor es: " + p;
+        }
+        else if (t > l && t > p)
+        {
+            document.getElementById("log").innerHTML = "El mayor es: " + t;
+        }
+        else
+        {
+            document.getElementById("log").innerHTML = "Los numeros son iguales";
+        }
+        
+    }
+    </script>
+            
+        <div id="log"></div>     <br>
+        <div id="pass"></div>    <br>
+        
+        </body>
+</html>

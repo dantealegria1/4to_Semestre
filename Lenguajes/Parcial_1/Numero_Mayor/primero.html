@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+        function pares() {
+            // funcion que recibe los datos de la pagina anterior y dice cual es el mayor
+            var l = document.getElementById("1").value;
+            var p = document.getElementById("2").value;
+            var t = document.getElementById("3").value;
+
+            // tiene que ser 2 numeros pares sino no se puede hacer la operacion
+            if (l % 2 == 0 && (p % 2 == 0 || t % 2 == 0) ||
+                p % 2 == 0 && (l % 2 == 0 || t % 2 == 0) ||
+                t % 2 == 0 && (l % 2 == 0 || p % 2 == 0)) {
+            document.getElementById("submit").disabled = false;
+            } else {
+            document.getElementById("submit").disabled = true;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <form action="Segundo.html" method="get">
+        Primer Numero: <input type="text" name="First" id="1" oninput="pares()"> <br>
+        Segundo Numero: <input type="text" name="Second" id="2" oninput="pares()"> <br>
+        Tercer Numero: <input type="text" name="Third" id="3" oninput="pares()"> <br>
+        <input type="submit" value="Click and See" id="submit" disabled>
+        </form>
+    </body>
+</html>
