@@ -13,8 +13,8 @@ h1 {
 /* 3*3 Grid */
 #b1, #b2, #b3, #b4, #b5,
 #b6, #b7, #b8, #b9 {
-    width: 80px;
-    height: 52px;
+    width: 100px;
+    height: 72px;
     margin: auto;
     border: 1px solid rgb(255, 0, 0);
     border-style: solid;
@@ -30,7 +30,7 @@ h1 {
 /* Reset Button */
 #but {
     box-sizing: border-box;
-    width: 95px;
+    width: 120px;
     height: 40px;
     border: 1px solid rgb(255, 45, 30);
     margin: auto;
