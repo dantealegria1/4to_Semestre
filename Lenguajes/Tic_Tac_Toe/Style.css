@@ -1,0 +1,122 @@
+body{
+    background-color: #f6bd60;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://minecraft-tutos.com/wp-content/uploads/2022/03/wallpaper-minecraft-steve-champs-1200x675.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    color: orangered;
+    font-size: 45px;
+    font-family: Verdana,
+        Geneva, Tahoma, sans-serif;
+}
+  /* Remove the default border and outline */
+  audio {
+    border: none;
+    outline: none;
+  }
+  
+  /* Style the play/pause button */
+  audio::-webkit-media-controls-play-button {
+    background-color: #f48c06;
+    border-radius: 50%;
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    margin-right: 1em;
+    text-align: center;
+    width: 2em;
+  }
+  audio::-webkit-media-controls-play-button:before {
+    content: '\25BA';
+    font-size: 1.5em;
+    line-height: 2em;
+  }
+  
+  /* Style the progress bar */
+  audio::-webkit-media-controls-current-time-display,
+  audio::-webkit-media-controls-time-remaining-display {
+    font-family: monospace;
+    font-size: 0.8em;
+    margin: 0 1em;
+    text-align: center;
+    width: 3em;
+  }
+  
+  /* Style the volume control */
+  audio::-webkit-media-controls-volume-slider {
+    height: 1em;
+    margin-right: 1em;
+    width: 5em;
+  }
+  audio::-webkit-media-controls-mute-button {
+    background-color: #f48c06;
+    border-radius: 50%;
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    margin-right: 1em;
+    text-align: center;
+    width: 2em;
+  }
+  audio::-webkit-media-controls-mute-button:before {
+    content: '\1F50A';
+    font-size: 1.5em;
+    line-height: 2em;
+  }
+/* 3*3 Grid */
+#b1, #b2, #b3, #b4, #b5,
+#b6, #b7, #b8, #b9 {
+    width: 100px;
+    height: 72px;
+    margin: auto;
+    border: 3px solid #9d0208;
+    border-style: solid;
+    border-radius: 6px; 
+    font-size: 30px;
+    text-align: center;
+    font-family: Comic Sans MS,
+        Comic Sans, cursive;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+/* Reset Button */
+#but {
+    box-sizing: border-box;
+    width: 120px;
+    height: 40px;
+    border: 1px solid rgb(255, 45, 30);
+    margin: auto;
+    border-radius: 4px;
+    font-family: Verdana,
+        Geneva, Tahoma, sans-serif;
+
+    background-color: #d00000;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Player turn space */
+#print {
+    font-family: Verdana,
+        Geneva, Tahoma, sans-serif;
+    color: #9d0208;
+    font-size: 20px;
+}
+
+/* Main Container */
+#main {
+    text-align: center;
+}
+
+/* Game Instruction Text */
+#ins {
+    font-family: Verdana,
+        Geneva, Tahoma, sans-serif;
+    color:#e85d04;
+    font-size: 17px;
+}

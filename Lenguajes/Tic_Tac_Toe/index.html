@@ -5,20 +5,23 @@
         <meta name="viewport" content=
             "width=device-width, initial-scale=1.0">
     
-        <!-- CSS file Included -->
+       
         <link rel="stylesheet"
             type="text/css" href="Style.css">
-    
-        <!-- JavaScript file included -->
+   
         <script src="Funcion.js"></script>
     </head>
     
     <body>
+        <audio controls autoplay="true">
+            <source src="Sweden.mp3" type="audio/mpeg">
+        </audio>
+
         <div id="main">
             <img src="https://ghomsi.github.io/gitstore/img/tictactoe.gif" 
             width="250" height="100">
     
-            <!-- Game Instructions -->
+            
             <p id="ins"><br>Primer jugador inicia:
                 <b>Jugador X</b><br><br>Segundo
                 Jugador inicia: <b>Jugador 0</b>
@@ -28,7 +31,7 @@
             <p id="score0"></p>
             <p id="scoreE"></p>
             <p id="print"></p>
-            <!-- 3*3 grid of Boxes -->
+            
             <input type="text" id="b1" onclick=
                 "myfunc_3(); myfunc(); colores();" readonly>
     
@@ -58,15 +61,15 @@
             <input type="text" id="b9" onclick=
                 "myfunc_11();myfunc();colores();" readonly>
     
-            <!-- Grid end here  -->
+            
             <br><br><br>
-            <!-- Button to reset game -->
+            
             <button id="but" onclick="myfunc_2(); score();">
                 REINICIO
             </button>
     
             <br><br>
-            <!-- Space to show player turn -->
+           
         </div>
     </body>
     

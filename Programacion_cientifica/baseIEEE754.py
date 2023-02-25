@@ -65,4 +65,4 @@ def baseIEEE754(numero):
     print("numero convertido", convertido)
     return convertido
 
-baseIEEE754(-30)
+baseIEEE754(127)
