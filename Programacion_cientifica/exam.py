@@ -56,20 +56,24 @@ def main():
     print("2) Metodo 2")
     print("3) Metodo 3")
     print("4) Salir")
+    print("------------------")
     opcion = int(input("Ingresa una opcion: "))
     while opcion != 4:
         if opcion == 1:
             numero = int(input("Ingresa un numero: "))
-            print("El complemento es: ", complemento_1(numero)," en binario -->",resta_binaria(numero)," en decimal")
+            print("El complemento es: ", complemento_1(numero)," en c2 -->",resta_binaria(numero)," en decimal")
             print("Metodo tradicional")
+            print("------------------")
         elif opcion == 2:
             numero = int(input("Ingresa un numero: "))
-            print("El complemento es: ", complemento_2(numero)," en binario -->",resta_binaria(numero)," en decimal")
+            print("El complemento es: ", complemento_2(numero)," en c2 -->",resta_binaria(numero)," en decimal")
             print("Metodo Inverso")
+            print("------------------")
         elif opcion == 3:
             numero = int(input("Ingresa un numero: "))
-            print("El complemento es: ", formula(numero)," en binario -->",resta_binaria(numero)," en decimal")
-            print("Metodo Formula")
+            print("El complemento es: ", formula(numero)," en c2 -->",resta_binaria(numero)," en decimal")
+            print("Metodo Formula 2^K-n")
+            print("------------------")
         else:
             print("Opcion invalida")
         print("1) Metodo 1")
@@ -77,6 +81,7 @@ def main():
         print("3) Metodo 3")
         print("4) Salir")
         opcion = int(input("Ingresa una opcion: "))
+        print("------------------")
     print("Adios")
 
 if __name__ == "__main__":
