@@ -1,6 +1,11 @@
+#Dante Alejandro Alegria Romero
+#Fecha: 27/02/2023
+#Nombre exam.py
+
 from Complemeto_2 import complemento_2
 from Complemeto_2 import complemento_1
 from Complemeto_2 import convertir_a_binario
+
 def binario_a_decimal(numero):
     decimal = 0
     for i in range(len(numero)):
@@ -10,14 +15,14 @@ def binario_a_decimal(numero):
 def formula(n):
     #n) = 2^K - n
     if n >= 0:
-        K=int(input("Ingresa el numero de bits: "))
+        K=8
         n=n
         f=2**K-n
         binario = bin(f)
         binario = binario [2:]
         return binario
     else:
-        K=int(input("Ingresa el numero de bits: "))
+        K=8
         n=abs(n-1)
         f=2**K-n
         binario = bin(f)
@@ -62,12 +67,12 @@ def main():
         if opcion == 1:
             numero = int(input("Ingresa un numero: "))
             print("El complemento es: ", complemento_1(numero)," en c2 -->",resta_binaria(numero)," en decimal")
-            print("Metodo tradicional")
+            print("Metodo tradicional donde sacamos el complemento de 1 y le restamos 1")
             print("------------------")
         elif opcion == 2:
             numero = int(input("Ingresa un numero: "))
             print("El complemento es: ", complemento_2(numero)," en c2 -->",resta_binaria(numero)," en decimal")
-            print("Metodo Inverso")
+            print("Metodo Inverso donde volteamos los bits y le sumamos 1")
             print("------------------")
         elif opcion == 3:
             numero = int(input("Ingresa un numero: "))

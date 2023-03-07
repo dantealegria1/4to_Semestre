@@ -2,7 +2,7 @@
 # números enteros (positivos y negativos) en complemento a 2
 #Dante Alejandro Alegria Romero
 #Fecha: 13/02/2023
-
+#Nombre Complemento_2.py
 import time
 
 #Aqui lo convertimos a binario   de toda la vida
