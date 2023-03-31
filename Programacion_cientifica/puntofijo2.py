@@ -8,5 +8,5 @@ def polola3():
     b = 1
     tolera = 1e-4
     iteramax = 100
-    print(opt.fixed_point(gx,a,xtol=tolera,maxiter=iteramax))
+    return opt.fixed_point(gx,a,xtol=tolera,maxiter=iteramax)
 

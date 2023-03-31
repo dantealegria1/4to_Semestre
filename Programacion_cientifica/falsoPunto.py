@@ -22,7 +22,7 @@ def polola1():
                 a = x
             x = (a*f(b) - b*f(a))/(f(b) - f(a))
             x0 = f(x)
-        print("La raiz es: ", x)
+        return x
 
 polola1()
 

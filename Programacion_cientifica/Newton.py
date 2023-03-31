@@ -19,5 +19,5 @@ def polola2():
         x1 = f(a)
         x2 = df(a)
         x3 = a - (x1/x2)
-    print(x3)
+    return x3
 

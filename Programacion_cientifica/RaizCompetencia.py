@@ -16,13 +16,11 @@ gx = lambda x: np.exp(-x)
 os.system("cls")
 
 print("Metodo de falsa posicion")
-polola1()
-
+print(polola1())
 print("Metodo de Newton")
-polola2()
-
+print(polola2())
 print("Metodo de punto fijo")
-polola3()
+print(polola3())
 
-
-
+diferencia = abs(polola1() - polola2())
+print("La diferencia entre los metodos de falsa posicion y Newton es: ", diferencia)
