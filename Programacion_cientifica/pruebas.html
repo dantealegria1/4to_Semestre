@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Game</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/dantealegria1/dantealegria1.github.io/main/WhatsApp%20Image%202023-05-24%20at%2012.50.41%20PM%20(1).png"  sizes="16x16">
+    <style>
+        body {
+            font-family: Minecraft Regular, monospace;
+            text-align: center;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+
+        #banner {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        #banner::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+
+        #pene {
+    position: absolute;
+    top: 0;
+    left: -11.5%; /* Cambia este valor para ajustar el desplazamiento */
+    width: 150%;
+    height: 150%;
+    object-fit: cover;
+    opacity: 0.9;
+    filter: brightness(0.3);
+    z-index: -2;
+}
+
+
+            #content {
+            margin-top: 0;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #774523;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #23527c;
+        }
+
+        #bottom-text {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        table {
+            margin: 40px auto;
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #f1f1f1;
+            font-weight: bold;
+        }
+
+        /* Estilos para las imágenes en las esquinas */
+        .corner-image {
+            position: absolute;
+            max-width: 200px;
+            transform: translate(-50%, -50%);
+        }
+
+        .bottom-left {
+            bottom: 0;
+            left: 0;
+        }
+
+        .bottom-right {
+            bottom: 0;
+            right: 0;
+        }
+
+        /* Estilos para la imagen centrada en el banner */
+        .center-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 100%;
+            max-height: 100%;
+            z-index: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="banner">
+            <img src="https://github.com/dantealegria1/dantealegria1.github.io/raw/main/Juego-%E2%80%90-Hecho-con-Clipchamp.gif" id="pene" type="video/mp4">
+        <!-- Esta imagen se centra en el banner -->
+        <img src="https://raw.githubusercontent.com/dantealegria1/dantealegria1.github.io/main/PantallaCarga-0001.png" class="center-image">
+    </div>
+    <div id="content">
+        <h1>Descargar Math-game</h1>
+        <p>Descarga el juego aqui</p>
+
+        <a href="https://drive.google.com/file/d/1Sdc7rqa6S00PrEEekSGgCFSfVNFd4Cyf/view?usp=share_link" download>Descargar</a>
+        <p>Para jugar el juego, descomprime el archivo y ejecuta el archivo Math-game.exe</p>
+
+        <table>
+            <tr>
+                <th>Requisito</th>
+                <th>Mínimo</th>
+            </tr>
+            <tr>                
+                <td>Sistema Operativo</td>
+                <td>Windows 10</td>
+            </tr>
+            <tr>
+                <td>Procesador</td>
+                <td>Intel® Celeron® J 4025 (frecuencia base de 2 GHz, hasta 2.9 GHz, 2 MB de caché L2, 2 núcleos)</td>
+            </tr>
+            <tr>
+                <td>Memoria</td>
+                <td>4 GB de RAM DDR4-2400 MHz (1 x 4 GB)</td>
+            </tr>
+            <tr>
+                <td>Almacenamiento</td>
+                <td>Disco duro-SATA de 1 GB y 7200 rpm</td>
+            </tr>
+            <tr>
+                <td>Tarjeta Gráfica</td>
+                <td>Integrada</td>
+            </tr>
+        </table>
+    </div>
+ <div style="text-align: center;">
+        <iframe frameborder="0" src="https://itch.io/embed/2113688?border_width=5&amp;bg_color=f2e9e4&amp;fg_color=22223b&amp;link_color=ef233c&amp;border_color=9a8c98" width="560" height="175"></iframe>
+    </div>
+    <p id="bottom-text">@2023 2A2B Games Inc. Todos los derechos reservados</p>
+</body>
+</html>
